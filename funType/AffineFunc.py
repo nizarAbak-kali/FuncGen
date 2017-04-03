@@ -11,5 +11,6 @@ class Affine(Function):
 
     def __str__(self):
         str = "def {2}_{0}_{1}(x): \n" \
-              "\t return {0}*x+{1} \n".format(self.a,self.b,self.name)
+              "    return {0}*x+{1} \n" \
+              "{2}_{0}_{1}(x)".format(self.a,self.b,self.name)
         return str

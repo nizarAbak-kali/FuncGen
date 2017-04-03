@@ -4,6 +4,7 @@
 # class pour definir de maniere generale une fonctiton
 
 class Function():
+
     def __init__(self, name="toto", a=0 ,b=0):
         self.name=name
         self.a = a
