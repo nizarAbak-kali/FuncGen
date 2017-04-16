@@ -13,7 +13,6 @@ class Lineaire(Function):
         self.a = a
 
     def __str__(self):
-        str = "def {1}_{0}(x): \n" \
-              "    return {0}*x \n" \
-              "{1}_{0}(x)".format(self.a,self.name)
+        str = "def fn(x): \n" \
+              "    return {0}*x \n".format(self.a, self.name)
         return str
