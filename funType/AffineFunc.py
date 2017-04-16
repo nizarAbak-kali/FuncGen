@@ -10,7 +10,6 @@ class Affine(Function):
         Function.__init__(nom, a, b)
 
     def __str__(self):
-        str = "def {2}_{0}_{1}(x): \n" \
-              "    return {0}*x+{1} \n" \
-              "{2}_{0}_{1}(x)".format(self.a,self.b,self.name)
+        str = "def fn(x): \n" \
+              "    return {0}*x+{1} \n".format(self.a, self.b, self.name)
         return str
